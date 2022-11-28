@@ -1,0 +1,178 @@
+.header{
+  background-color: white;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(238,238,238);
+  z-index: 100;
+}
+.logo-section{
+  display: flex;
+  align-items: center;
+}
+.ham-menu{
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 40px;
+  height: 24px;
+}
+.ham-menu:hover{
+  cursor: pointer;
+}
+.ytb-logo{
+  width: 90px;
+  height: 24px;
+}
+.ytb-logo:hover{
+  cursor: pointer;
+}
+.middle-section{
+  display: flex;
+  align-items: center;
+  flex:1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 700px;
+}
+.search-bar{
+  flex: 1;
+  height: 30px;
+  flex-shrink: 0;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+}
+.search-bar::placeholder{
+  font-family: Roboto, Arial;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.search-button{
+  height: 34px;
+  width: 60px;
+  margin-right: 10px;
+  margin-left: -2px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: rgb(247, 247, 247);
+  border-color: rgb(204,204,204); 
+  border-radius: 2px;
+}
+.search-button,
+.voice-search,
+.upload-container,
+.apps,
+.notification-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-button .tooltip,
+.voice-search .tooltip,
+.upload-container .tooltip,
+.apps .tooltip,
+.notification-container .tooltip{
+  position: absolute;
+  background-color: rgb(169, 166, 166);
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.search-button:hover{
+  cursor: pointer;
+}
+.search-button:hover .tooltip,
+.voice-search:hover .tooltip,
+.upload-container:hover .tooltip,
+.apps:hover .tooltip,
+.notification-container:hover .tooltip{
+  opacity: 1;
+}
+.search-pic{
+  width: 60%;
+  margin-top: 2px;
+}
+.voice-search{
+  height: 36px;
+  width: 40px;
+  border: none;
+  border-radius: 18px;
+}
+.voice-pic{
+  width: 92%;
+  margin-top: 3px;
+}
+.voice-search:hover{
+  cursor: pointer;
+}
+.right-section{
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+.upload{
+  width: 35px;
+  height: 35px;
+  margin-right: 16px;
+}
+.upload:hover{
+  cursor: pointer;
+}
+.ytb-apps{
+  width: 35px;
+  height: 35px;
+  margin-right: 16px;
+}
+.ytb-apps:hover{
+  cursor: pointer;
+}
+.notifications{
+  width: 35px;
+  height: 35px;
+  margin-right: 16px;
+}
+.notifications:hover{
+  cursor: pointer;
+}
+.notification-container{
+  position: relative;
+}
+.notification-count{
+  position: absolute;
+  background-color: rgb(200,0,0);
+  color: white;
+  top: 0px;
+  right: 15px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
+  border-radius: 16px;
+}
+.my-channel-pic{
+  width: 36px;
+  height: 36px;
+  border-radius: 20px;
+}
+.my-channel-pic:hover{
+  cursor: pointer;
+}
